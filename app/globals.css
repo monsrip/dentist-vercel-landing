@@ -185,3 +185,40 @@ footer{background:#101c18}
 @media(max-width:1080px){.plans-top,.access-grid{gap:45px}.standards-shell{gap:45px}.standards-copy{padding-left:0}.access-points{grid-template-columns:1fr}.access-points>div{display:grid;grid-template-columns:auto 1fr;gap:10px}.access-points p{margin:0}}
 @media(max-width:780px){.plans-top,.standards-shell,.access-grid{grid-template-columns:1fr}.plans-top{gap:22px}.plan-grid{grid-template-columns:1fr}.plan-card,.plan-card:first-child,.plan-card:last-child{padding:30px 4px;min-height:auto;border-right:0;border-bottom:1px solid var(--line)}.plan-card:last-child{border-bottom:0}.plan-card h3{margin-top:28px}.standards{padding:80px 0}.standards-shell{gap:55px}.standards-data>div{min-height:180px}.standards-data strong{font-size:48px}.access-grid{gap:45px}}
 @media(max-width:480px){.plans-top h2,.standards-copy h2,.access-main h2{font-size:40px;letter-spacing:-2px}.standards-data{grid-template-columns:1fr}.standards-data>div{min-height:145px}.emergency-card{padding:29px}.emergency-card h3{font-size:33px}.emergency-card>a{font-size:18px}}
+
+/* Complete responsive hardening */
+img,svg{max-width:100%}input,select,textarea,button{min-width:0}.hero-copy,.experience-copy,.smile-copy,.appointment-copy,.access-main,.standards-copy,.doctor-info{min-width:0}section{scroll-margin-top:78px}
+@media(max-width:900px){
+  .container{width:min(100% - 36px,1180px)}.section-pad{padding:88px 0}
+  .hero{padding-top:125px}.hero-grid{grid-template-columns:1fr;gap:44px}.hero-copy{max-width:720px}.hero h1{font-size:clamp(58px,9vw,78px)}.hero-visual{height:600px}.photo-card{height:560px;width:min(460px,82vw)}
+  .experience-grid,.smile-grid,.appointment-shell,.faq-grid,.access-grid{grid-template-columns:1fr;gap:54px}.tech-canvas{max-width:700px;width:100%;margin:auto}.smile-copy,.appointment-copy,.faq-intro,.access-main{max-width:680px}
+  .plans-top{grid-template-columns:1fr;gap:22px}.plans-top>p{max-width:650px}.plan-grid{grid-template-columns:repeat(2,1fr)}.plan-card:first-child{padding-left:28px}.plan-card:last-child{padding:32px 28px;grid-column:1/-1;border-top:1px solid var(--line)}
+  .standards-shell{grid-template-columns:1fr;gap:48px;padding-top:60px;padding-bottom:60px}.standards-copy{max-width:650px}.standards-data{width:100%}
+  .dentists .doctor-grid{max-width:760px}.review-grid{grid-template-columns:repeat(2,1fr)}.review-card:last-child{grid-column:1/-1;min-height:220px}
+  .footer-main{grid-template-columns:1.35fr 1fr 1fr}.footer-main>div:last-child{grid-column:2/-1}.footer-brand{grid-row:span 2}
+}
+@media(max-width:640px){
+  .container{width:calc(100% - 28px)}.section-pad{padding:70px 0}.site-header .container{width:calc(100% - 24px)}
+  .nav-wrap{height:66px}.brand-mark{width:38px;height:38px}.brand strong{font-size:16px}.brand small{letter-spacing:1.25px}.mobile-panel{left:12px;right:12px;top:64px;max-height:calc(100vh - 78px);overflow-y:auto}
+  .hero{padding-top:105px}.hero h1{font-size:clamp(45px,13.4vw,62px);line-height:.97;letter-spacing:-3.2px;margin:20px 0}.hero-lead{font-size:16px;line-height:1.6}.hero-actions{display:grid;grid-template-columns:1fr}.hero-actions .btn{width:100%}.hero-proof{align-items:flex-start;gap:12px}.hero-visual{height:525px}.photo-card{width:min(390px,90vw);height:490px;border-radius:190px 190px 24px 24px}.float-card{max-width:185px}.card-rating{left:0;top:86px}.card-availability{right:0;bottom:53px}.card-scan{display:none}.photo-card .portrait-topline{left:20px;right:20px}.photo-card .portrait-caption{left:24px;right:24px;bottom:24px}.photo-card .portrait-caption strong{font-size:25px}
+  .trust-strip{grid-template-columns:1fr;padding:10px 17px}.trust-strip>div{border-right:0;border-bottom:1px solid var(--line);padding:13px 4px}.trust-strip>div:last-child{border-bottom:0}
+  .section-head,.review-heading{display:block}.section-head h2,.experience h2,.smile-copy h2,.faq-intro h2,.appointment h2,.review-heading h2,.plans-top h2,.standards-copy h2,.access-main h2{font-size:clamp(36px,10vw,46px);line-height:1.04;letter-spacing:-2px}.section-head>p{margin-top:18px;font-size:14px}
+  .service-grid{grid-template-columns:1fr}.service-card{min-height:auto;padding:25px}.service-icon{margin-bottom:34px}.service-tag{right:18px}
+  .tech-canvas{height:400px;border-radius:22px}.scan-window{inset:35px 12px}.scan-header{padding:0 12px;gap:8px}.tooth-model{height:245px}.tooth-model::before{width:245px;height:245px}.tooth-model::after{width:190px;height:190px}.arch{transform-origin:center;width:270px}.top-arch{top:55px;transform:scale(.78)}.bottom-arch{top:130px;transform:scale(.78)}.scan-metrics{height:68px;padding:0 5px}.scan-metrics span{padding:0 8px}.scan-metrics b{font-size:11px}.note-one{display:none}.note-two{right:8px;top:9px}
+  .steps{margin-top:42px}.step{padding-left:60px}.step p{max-width:none}
+  .plan-grid{grid-template-columns:1fr}.plan-card,.plan-card:first-child,.plan-card:last-child{grid-column:auto;padding:28px 4px;border-right:0;border-top:0}.plan-card:not(:last-child){border-bottom:1px solid var(--line)}
+  .standards{padding:62px 0}.standards-shell{padding-top:0;padding-bottom:0}.standards-data{grid-template-columns:1fr 1fr}.standards-data>div{padding:22px;min-height:155px}.standards-data strong{font-size:43px}
+  .smile-grid{gap:35px}.mini-stats{gap:5px}.mini-stats div{padding:12px 4px}.before-after{height:300px;border-radius:20px}.smile-section .before-after{border-width:5px}.mouth{left:50%;margin-left:-180px;transform:scale(.67) translateY(35px)}.ba-divider span{width:40px;height:40px}
+  .dentists .doctor-photo{min-height:390px}.dentists .doctor-info{padding:28px}.dentists .doctor-info blockquote{font-size:18px;margin-top:25px}.doctor-tags{margin-top:22px}
+  .review-grid{grid-template-columns:1fr}.review-card,.review-card:last-child{grid-column:auto;min-height:240px}.rating-block>strong{font-size:42px}
+  .faq-item button{gap:16px;font-size:13px}.faq-plus{flex:0 0 31px}
+  .emergency-card{padding:28px}.emergency-card>a{font-size:18px;overflow-wrap:anywhere;gap:12px}
+  .form-card{padding:22px 18px}.form-card-head{gap:12px}.appointment-form input,.appointment-form select,.appointment-form textarea{font-size:16px}.form-row{grid-template-columns:1fr}
+  .footer-main{grid-template-columns:1fr 1fr;gap:35px 24px}.footer-brand{grid-column:1/-1;grid-row:auto}.footer-main>div:last-child{grid-column:auto}.footer-bottom div{flex-wrap:wrap}.whatsapp{right:14px;bottom:14px}
+}
+@media(max-width:390px){
+  .container{width:calc(100% - 22px)}.section-pad{padding:60px 0}.hero h1{font-size:43px;letter-spacing:-2.7px}.eyebrow{font-size:10px}.hero-visual{height:470px}.photo-card{height:440px;width:94vw}.float-card{padding:9px}.card-rating{top:72px}.card-availability{bottom:38px}.float-card small{font-size:8px}.photo-card .portrait-topline>span:first-child{display:none}
+  .standards-data{grid-template-columns:1fr}.standards-data>div{min-height:125px}.mini-stats{grid-template-columns:1fr}.mini-stats div{display:flex;justify-content:space-between;align-items:center}.mini-stats span{margin-top:0}.before-after{height:270px}.mouth{transform:scale(.59) translateY(45px)}
+  .dentists .doctor-photo{min-height:340px}.footer-main{grid-template-columns:1fr}.footer-main>div:last-child{grid-column:auto}.footer-bottom div{gap:12px}.form-card-head small{display:none}
+}
+@media(hover:none){.service-card:hover,.plan-card:hover,.btn:hover,.whatsapp:hover{transform:none}}
